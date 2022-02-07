@@ -16,9 +16,12 @@
 //   return array[0];
 // }
 //2.1
-const findShort = (str) =>
-  str.split(" ").reduce((a, b) => (b.length < a.length ? b : a));
+// const findShort = (str) =>
+//   str.split(" ").reduce((a, b) => (b.length < a.length ? b : a));
 
+//2.2
+const findShort = (str) =>
+  str.split(" ").sort((a, b) => a.length - b.length)[0];
 const sentance = "Lorem ipsum dolor sit amet";
 
 console.log(findShort(sentance));
