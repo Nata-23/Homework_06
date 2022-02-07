@@ -15,9 +15,13 @@
 //   });
 //   return array[0];
 // }
-// const sentance = "Lorem ipsum dolor sit amet";
 
-// console.log(findShort(sentance));
-// console.log(findShort("Hello world"));
-// console.log(findShort("Hi"));
-// console.log(findShort("She is David's sister"));
+const findShort = (str) =>
+  str.split(" ").reduce((a, b) => (b.length < a.length ? b : a));
+
+const sentance = "Lorem ipsum dolor sit amet";
+
+console.log(findShort(sentance));
+console.log(findShort("Hello world"));
+console.log(findShort("Hi"));
+console.log(findShort("She is David's sister"));
