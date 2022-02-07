@@ -1,11 +1,11 @@
 "use strict";
 
 //1
-const sumTo = (n) => (n === 1 ? n : n + sumTo(n - 1));
-console.log(sumTo(1));
-console.log(sumTo(2));
-console.log(sumTo(3));
-console.log(sumTo(4));
+// const sumTo = (n) => (n === 1 ? n : n + sumTo(n - 1));
+// console.log(sumTo(1));
+// console.log(sumTo(2));
+// console.log(sumTo(3));
+// console.log(sumTo(4));
 
 //2
 // function findShort(str) {
