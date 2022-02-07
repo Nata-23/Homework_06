@@ -15,7 +15,7 @@
 //   });
 //   return array[0];
 // }
-
+//2.1
 const findShort = (str) =>
   str.split(" ").reduce((a, b) => (b.length < a.length ? b : a));
 
